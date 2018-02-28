@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+
+    <Button
+        android:id="@+id/start_searching_T"
+        android:layout_width="128dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="165dp"
+        android:text="@string/start"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.414"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/language_f" />
+
+    <Spinner
+        android:id="@+id/language_f"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="137dp"
+        android:layout_marginEnd="151dp"
+        android:background="?android:attr/colorButtonNormal"
+        android:entries="@array/languagelist"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/start_searching_T"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/to_language"
+        app:layout_constraintTop_toBottomOf="@+id/language_t" />
+
+    <Spinner
+        android:id="@+id/language_t"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="46dp"
+        android:layout_marginEnd="161dp"
+        android:layout_marginTop="83dp"
+        android:background="?android:attr/colorButtonNormal"
+        android:entries="@array/languagelist"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/language_f"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/from_language"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/from_language"
+        android:layout_width="wrap_content"
+        android:layout_height="34dp"
+        android:layout_marginBottom="88dp"
+        android:layout_marginEnd="39dp"
+        android:layout_marginStart="51dp"
+        android:layout_marginTop="91dp"
+        android:background="#ffffff"
+        android:text="@string/from"
+        android:textColor="#F78500"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/to_language"
+        app:layout_constraintEnd_toStartOf="@+id/language_t"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/to_language"
+        android:layout_width="39dp"
+        android:layout_height="51dp"
+        android:layout_marginBottom="350dp"
+        android:layout_marginEnd="55dp"
+        android:layout_marginStart="51dp"
+        android:background="#ffffff"
+        android:text="@string/to"
+        android:textColor="#F78500"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/language_f"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/from_language" />
+</android.support.constraint.ConstraintLayout>

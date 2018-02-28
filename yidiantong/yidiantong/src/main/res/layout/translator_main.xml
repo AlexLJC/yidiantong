@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:layout_editor_absoluteY="25dp">
+
+
+    <Button
+        android:id="@+id/start_searching_T"
+        android:layout_width="128dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="59dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/start"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/language_f"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Spinner
+        android:id="@+id/language_f"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="206dp"
+        android:layout_marginEnd="116dp"
+        android:layout_marginTop="204dp"
+        android:background="?android:attr/colorButtonNormal"
+        android:entries="@array/languagelist"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/start_searching_T"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/to_language"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@+id/language_t"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="75dp"
+        android:layout_marginEnd="142dp"
+        android:layout_marginTop="84dp"
+        android:background="?android:attr/colorButtonNormal"
+        android:entries="@array/languagelist"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/language_f"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/from_language"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/from_language"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="89dp"
+        android:layout_marginEnd="26dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="79dp"
+        android:background="#ffffff"
+        android:text="@string/from"
+        android:textColor="#F78500"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/to_language"
+        app:layout_constraintEnd_toStartOf="@+id/language_t"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/to_language"
+        android:layout_width="0dp"
+        android:layout_height="59dp"
+        android:layout_marginBottom="305dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginStart="16dp"
+        android:background="#ffffff"
+        android:text="@string/to"
+        android:textColor="#F78500"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/language_f"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/from_language" />
+
+    <EditText
+        android:id="@+id/demand"
+        android:layout_width="201dp"
+        android:layout_height="88dp"
+        android:layout_marginBottom="161dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="填写需求"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/language_f"
+        app:layout_constraintVertical_bias="1.0" />
+</android.support.constraint.ConstraintLayout>

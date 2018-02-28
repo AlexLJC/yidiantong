@@ -1,0 +1,2 @@
+include ':yidiantong', ':app', ':base', ':instantapp', ':wx'
+project(':wx').projectDir = new File('yidiantong/libs/wx')
